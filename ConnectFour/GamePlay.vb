@@ -165,10 +165,11 @@
 
         Me.Invalidate() '' Redraws the screen
 
-        Connect4_Stalemate()
-        Connect4_CheckColumnFull(intRandom, intRow)
-
         Connect4_CheckWin(intCurrentPlayer)
+
+        Connect4_CheckColumnFull(intRandom, intRow)
+        Connect4_Stalemate()
+
         intCurrentPlayer = (intCurrentPlayer Mod 2) + 1 '' 1 becomes 2, 2 becomes 1
 
     End Sub
